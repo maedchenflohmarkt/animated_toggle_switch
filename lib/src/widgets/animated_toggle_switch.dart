@@ -517,8 +517,7 @@ class AnimatedToggleSwitch<T> extends StatelessWidget {
       if (customIconBuilder == null) return SizedBox();
       double distance = global.dif + global.indicatorSize.width;
       double angleDistance = distance /
-          iconSize.longestSide *
-          2 *
+          (iconSize.longestSide * 3) *
           (global.textDirection == TextDirection.rtl ? -1.0 : 1.0);
       final pos = global.position;
       int first = pos.floor();
